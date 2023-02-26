@@ -1,5 +1,5 @@
 ## Ecommerce-Mienvío
-Sistema de filtros de productos usando Laravel y Vue.
+Sistema de filtros de productos usando Laravel y Vue+Bootstrap.
 
 ### Requerimientos
 - Composer
@@ -36,3 +36,9 @@ Este comando levantará la aplicación: `php artisan serve`
 Después de esto, podrás visitar http://localhost:8000 y podrás ver la aplicación
 
 Este comando levantará la aplicación mapeada con tu ip: `php artisan serve --host=0.0.0.0`
+
+### Funcionalidad
+1. Luego de levantar el servidor, se debe autenticar con cualquier usuario y en su dashboard o `/home` se encuentra el listado y filtrado de productos.
+2. Por defecto, se obtienen todos los productos ordenados por nombre
+3. **Filtro nombre**: Se debe ingresar algun nombre, y enviar el formulario para obtener los productos filtrados.
+3. **Filtro precios**: Se puede ingresar el precio minimo o máximo, o ambos para enviar la consulta y obtener los productos filtrados.
