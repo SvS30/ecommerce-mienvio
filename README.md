@@ -2,15 +2,15 @@
 Sistema de filtros de productos usando Laravel y Vue.
 
 ### Requerimientos
-- [Composer]()
-- [PHP]()
-- [Laravel]()
-- [Node]()
-- [npm]()
+- Composer
+- PHP >= 7.4
+- Laravel >= 8.0
+- Node >= 14.16
+- npm >= 6
 
 ### Instalación
 1. Instalar dependencias: `composer install`
-2. Clonar archivo de variables de entorno: `cp .env.example .env`
+2. Clonar archivo de variables de entorno: `composer run post-root-package-install`
 3. Establecer variables de entorno
     ```
     APP_NAME=Laravel
@@ -25,8 +25,10 @@ Sistema de filtros de productos usando Laravel y Vue.
     DB_USERNAME=root
     DB_PASSWORD=
     ```
-4. Generar una nueva key: `php artisan key:generate`
-5. Ejecutar migraciones y seeders: `php artisan migrate --seed`
+4. Generar una nueva key: `composer run post-create-project-cmd`
+5. Datos (solo requiere ejecutar alguna de estas opciones):
+    - Importar `schema_ecommerce_mienvio.sql` en su sistema de **MySQL**.
+    - Ejecutar migraciones y seeders: `php artisan migrate --seed`
 
 ### Levantar el servidor
 Este comando levantará la aplicación: `php artisan serve`
