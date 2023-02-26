@@ -6,9 +6,10 @@
         <div class="col-md-12">
             <div class="row g-5">
                 <div class="col-md-8 order-md-last">
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-primary">Productos</span>
-                    </h4>
+                    <div class="col-md-12 d-flex">
+                        <h4>Productos</h4> 
+                        <modal-component></modal-component>
+                    </div>
                     <ul class="list-group mb-3">
                         @foreach ($products as $product)
                             <product-item :name="{{json_encode($product->nombre)}}" :description="{{json_encode($product->descripcion)}}"
